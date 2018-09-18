@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>
+Main menu page
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.header{
+    background-color: white;
+    height: 4%;
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1vw;
+}
+.left{
+    background-color: RGB(9, 68, 117);
+    height: 94%;
+    width: 15%;
+    position: fixed;
+}
+.right{
+    background-color: RGB(87, 158, 230);
+    height: 94%;    
+}
+.footer{
+    background-color: white;
+    padding: 2px 2px 2px 2px;
+    height: 2%;
+    text-align: Left;
+    position:fixed;
+    margin-bottom:0px;
+    clear: both;
+    bottom:0;
+    left:0;
+    right:0;
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+.leftmenu{
+    color: white;
+    border-bottom: 2px solid RGB(87, 158, 230);	
+    padding: 16px 8px 16px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+.leftmenu:hover{
+    font-weight: bold;
+}
+
+.logintime{
+    color: white;
+    border-bottom: 2px solid RGB(87, 158, 230);	
+    background-color: RGB(87, 158, 230);
+    padding: 16px 8px 16px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;	
+}
+.button {
+    background-color: RGB(9, 68, 117);
+    border: 1px solid white;
+    color: white;
+    padding:5px 25px 5px 25px;
+    float: right;
+    display: inline-block;
+    font-size: 10px;
+    margin-top: 12px;
+    margin-right: 12px;	
+    text-decoration: none;  
+}
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    float: right;
+}
+input[type=text], input[type=password] {
+   
+    padding: 5px;
+    display: inline-block;
+    
+    
+    
+
+margin: 2px 0;
+}
+.container {
+    	margin-left: auto;
+	margin-right: auto;
+	width: 50vw;
+	border: 1px solid black;
+}
+label {
+display: inline-block;
+color: white;
+text-align: left;
+width: 25%
+}
+
+</style>
+</head>
+<body>
+<div class="header">VISITOR MANAGEMENT SYSTEM</div>
+<div class="left">
+<a class="logintime" href="">Visitor Login Time</a>
+<a class="leftmenu" href="LogoutTime.html">Visitor Logout Time</a>
+<a class="leftmenu" href="NewVisitor.html">New Visitor</a>
+<a class="leftmenu" href="AssetMovement.html">Asset Movement</a>
+</div>
+<div class="right">
+<a href="MainframePage.html" class="button">HOME</a>
+<form action="">
+<div class="container">    
+<label for="uname">Select Visitor:</label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+</div>
+<div class="container">    
+     <label for="pwd">Issued Card No:</label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+</div>
+<div class="container">    
+    <button type="submit">Login</button>
+</div>    
+</form>
+</div>
+
+<div class="footer">Disclaimer Notes: Copyright to Wipro technologies 2018-2020</div>
+
+</body>
+</html>
